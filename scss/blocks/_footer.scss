@@ -18,6 +18,7 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 16px;
+            font-size: 12px;
         }
     }
     &__list {
@@ -30,10 +31,16 @@
         &:hover {
             color: $link-hover;
         }
+        @include mobile {
+            font-size: 10px;
+        }
     }
     &__copyright {
         font-weight: 400;
         font-size: 12px;
         line-height: 1;
+        @include mobile {
+            font-size: 10px;
+        }
     }
 }

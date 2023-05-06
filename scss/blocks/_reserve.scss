@@ -2,11 +2,11 @@
     padding-top: 62px;
     padding-bottom: 124px;
     @include tablet {
-        padding-top: 80px;
+        padding-top: 40px;
         padding-bottom: 80px;
     }
     @include mobile {
-        padding-top: 64px;
+        padding-top: 32px;
         padding-bottom: 64px;
     }
     &__title {     
@@ -72,6 +72,9 @@
         &_sub {
             flex-basis: 100%;
             margin-bottom: 24px;
+            @include tablet {
+                margin-bottom: 20px;
+            }
         }
     }
     &__legend {

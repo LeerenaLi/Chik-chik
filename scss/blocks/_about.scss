@@ -17,7 +17,7 @@
         }         
         @include mobile {
             font-size: 20px;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
         }
     }
     &__description {
@@ -39,12 +39,15 @@
         grid-template-columns: repeat(auto-fit, 384px);
         gap: 32px;
         @include laptop {
-            grid-template-columns: repeat(auto-fit, 290px);
+            grid-template-columns: repeat(auto-fit, 280px);
             gap: 29px;
         }
         @include tablet {
-            grid-template-columns: repeat(auto-fit, 320px);
+            grid-template-columns: repeat(auto-fit, 300px);
             gap: 32px;
+        }
+        @include mobile {
+            grid-template-columns: minmax(272px, 1fr);
         }
     }
     &__item {
@@ -60,10 +63,9 @@
             padding: 6px 0 6px 96px;
         }
         @include mobile {
-            max-width: 272px;
             min-height: 65px;
             background-size: 64px;
-            padding: 6px 0 0 71px;
+            padding: 6px 0 0 72px;
         }
         &_top {
             background-image: url('../img/top.svg');

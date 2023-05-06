@@ -17,6 +17,7 @@ body {
     line-height: 1.2;
     background-color: $bg-color;
     color: $main-color;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 img, svg {
