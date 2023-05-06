@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chik-chik - Барбершоп</title>
     
+    <link rel="stylesheet" href="css/index.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
+            <div class="header__wrapper">
+                <img class="header__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik" width="70" height="40">
 
-            <nav class="header__navigation navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#price" class="navigation__link">стоимость услуг</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#about" class="navigation__link">О нас</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#price" class="navigation__link">стоимость услуг</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about" class="navigation__link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <a href="#reserve" class="header__link main-link">Записаться</a>
+                <a href="#reserve" class="header__link main-link">Записаться</a>
+            </div>
         </div>
     </header>
 
@@ -41,7 +44,7 @@
                             <li class="slider__item">
                                 <img src="img/photo01.jpg" alt="Фото 1" class="slider__img">
                             </li>
-                            <li class="slider__item">
+                            <li class="slider__item slider__item_active">
                                 <img src="img/photo02.jpg" alt="Фото 2" class="slider__img">
                             </li>
                             <li class="slider__item">
@@ -119,19 +122,20 @@
             <div class="container">
                 <h2 class="about__title">Мы помогаем всем мужчинам выглядеть уверенно</h2>
 
-                <p class="about__description">Сhik chik — это намного больше, чем просто барберная. Это место, где вам помогут найти свой собственный, неповторимый стиль. Стоит довериться нашим       мастерам один раз, и, поверьте, новый образ не оставит Вас равнодушным. Мужские стрижки и опасное бритье — это наш профиль, и мы уверены, что наши барберы делают это лучше всех.
+                <p class="about__description">
+                    Сhik chik&nbsp;&mdash; это намного больше, чем просто барберная. Это место, где вам помогут найти свой собственный, неповторимый стиль. Стоит довериться нашим мастерам один раз, и, поверьте, новый образ не&nbsp;оставит Вас равнодушным. Мужские стрижки и&nbsp;опасное бритье&nbsp;&mdash; это наш профиль, и&nbsp;мы&nbsp;уверены, что наши барберы делают это лучше всех.
                 </p>
 
                 <ul class="about__list">
-                    <li class="about__item">
+                    <li class="about__item about__item_top">
                         <h3 class="about__item-title">топ специалисты</h3>
                         <p class="about__item-description">Мы подстрижем вас на высшем уровне</p>
                     </li>
-                    <li class="about__item">
+                    <li class="about__item about__item_master">
                         <h3 class="about__item-title">мастера бород и усов</h3>
                         <p class="about__item-description">Мы заботливо уложим вашу бороду и усы</p>
                     </li>
-                    <li class="about__item">
+                    <li class="about__item about__item_guarantee">
                         <h3 class="about__item-title">гарантия качества</h3>
                         <p class="about__item-description">Мы используем только профессиональные средства</p>
                     </li>
@@ -141,7 +145,7 @@
 
         <section class="reserve" id="reserve">
             <div class="container">
-                <div class="h2 reserve__title">Как записаться к нам</div>
+                <h2 class="reserve__title">Как записаться к нам</h2>
 
                 <ol class="reserve__list">
                     <li class="reserve__item">Выберите услугу, можно выбрать сразу несколько</li>
@@ -194,28 +198,28 @@
                             <legend class="reserve__legend">Специалист</legend>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label_spec">Игорь</span>
+                                <input class="radio__input radio__input_spec" type="radio" name="spec">
+                                <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec1.png)">Игорь</span>
                             </label>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label_spec">Анатолий</span>
+                                <input class="radio__input radio__input_spec" type="radio" name="spec">
+                                <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec2.png)">Анатолий</span>
                             </label>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label_spec">Руслан</span>
+                                <input class="radio__input radio__input_spec" type="radio" name="spec">
+                                <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec3.png)">Руслан</span>
                             </label>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label_spec">Михаил</span>
+                                <input class="radio__input radio__input_spec" type="radio" name="spec">
+                                <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec4.png)">Михаил</span>
                             </label>
 
                             <label class="radio">
-                                <input class="radio__input" type="radio" name="spec">
-                                <span class="radio__label radio__label_spec">Евгений</span>
+                                <input class="radio__input radio__input_spec" type="radio" name="spec">
+                                <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec5.png)">Евгений</span>
                             </label>
                         </fieldset>
 
@@ -289,7 +293,7 @@
                         </fieldset>
                     </div>
 
-                    <button class="reserve__btn main-link">Записаться</button>
+                    <button class="reserve__btn main-link" disabled>Записаться</button>
                 </form>
             </div>
         </section>
@@ -298,27 +302,29 @@
 
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="img/logo.svg" alt="Логотип барбершоп Chik-chik" width="70" height="40">
 
-            <nav class="footer__navigation navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#price" class="navigation__link">стоимость услуг</a>
+                <nav class="footer__navigation navigation">
+                    <ul class="navigation__list footer__nav-list">
+                        <li class="navigation__item">
+                            <a href="#price" class="navigation__link">стоимость услуг</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about" class="navigation__link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        Designer: <a href="https://t.me/Mrshmallowww" class="footer__link">Anastasia Ilina</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#about" class="navigation__link">О нас</a>
+                    <li class="footer__item">
+                        Developer: <a href="https://vk.com/leerena_li" class="footer__link">Elena Shipilevskaya</a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="footer__list">
-                <li class="footer__item">
-                    Designer: <a href="https://t.me/Mrshmallowww" class="footer__link">Anastasia Ilina</a>
-                </li>
-                <li class="footer__item">
-                    Developer: <a href="https://vk.com/leerena_li" class="footer__link">Elena Shipilevskaya</a>
-                </li>
-            </ul>
+            </div>
 
             <p class="footer__copyright">&copy;&nbsp;chik chik, 2023</p>
         </div>

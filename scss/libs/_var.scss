@@ -1,0 +1,27 @@
+$main-color: #F6F3E3;
+$second-color: #BFBDB2;
+$dark-color: #241D1C; 
+$bg-color: #241D1C;
+$link-hover: #EFE7BE;
+
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 560px;
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}

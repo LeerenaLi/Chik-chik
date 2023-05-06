@@ -1,0 +1,24 @@
+.header {
+    &__wrapper {
+        padding-top: 16px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid $second-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mobile {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+    &__navigation {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 54px;
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
