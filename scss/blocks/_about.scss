@@ -37,7 +37,7 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, 384px);
-        gap: 32px;
+        gap: 24px 32px;
         @include laptop {
             grid-template-columns: repeat(auto-fit, 280px);
             gap: 29px;
