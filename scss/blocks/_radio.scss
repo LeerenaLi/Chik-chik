@@ -14,7 +14,7 @@
         cursor: pointer;
         border: 1px solid $second-color;
         border-radius: 36px;
-        &:hover {
+        &:hover:not(:disabled) {
             color: #EFE7BE;
         }
         @include tablet {
@@ -39,6 +39,10 @@
 .radio__input:focus + .radio__label {
     color: $dark-color;
     background: $main-color;
+}
+
+.radio__input:disabled + .radio__label {
+    opacity: 0.4;
 }
 
 .radio__input_spec:checked + .radio__label,
