@@ -22,14 +22,29 @@
             padding: 12px 16px;
         }
         &_spec {
+            position: relative;
             padding-left: 52px;
-            background-image: var(--bg-image);
-            background-size: 36px;
-            background-position: 8px;
-            background-repeat: no-repeat;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-image: var(--bg-image);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                @include tablet {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
             @include tablet {
                 padding-left: 40px;
-                background-size: 24px;
             }
         }
     }
@@ -49,9 +64,4 @@
 .radio__input_spec:focus + .radio__label {
     color: $dark-color;
     background: $main-color;
-    padding-left: 52px;
-    background-image: var(--bg-image);
-    background-size: 36px;
-    background-position: 8px;
-    background-repeat: no-repeat;
 }
