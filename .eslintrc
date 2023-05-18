@@ -7,7 +7,8 @@
   "extends": ["eslint:recommended"],
   "parserOptions": {
     "parser": "babel-eslint",
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   },
   "rules": {
     "no-console": "off",
@@ -254,8 +255,7 @@
       "consistent"
     ],
     "quotes": [
-      "error",
-      "single",
+      [2, "single", { "avoidEscape": true }],
       {
         "allowTemplateLiterals": true
       }
